@@ -1,0 +1,23 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+bower_components/
+
+platforms/
+plugins/
+
+resources/android
+
+.idea/
+.sass-cache/
+
+.DS_Store
+
+*.log
+*.tmp
+*.tmp.*
+*.keystore
+*.sw*
+
+# .idea/*

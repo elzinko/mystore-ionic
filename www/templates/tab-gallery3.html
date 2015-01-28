@@ -1,0 +1,28 @@
+<ion-view view-title="Gallery3">
+    <ion-content class="padding">
+        <a ng-repeat="image in images3" href="#" class="item">
+            <img ng-src="{{image}}">
+        </a>
+        <ion-infinite-scroll on-infinite="loadMore3()" distance="1%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+
+
+<!--<ion-content>-->
+    <!--<ion-refresher-->
+            <!--pulling-text="Pull to refresh..."-->
+            <!--refreshing-text="loading..."-->
+            <!--on-refresh="doRefresh()">-->
+    <!--</ion-refresher>-->
+    <!--<ion-list>-->
+        <!--<ion-item ng-repeat="item in data.images">-->
+            <!--<img ng-src="{{item.location}}" style="width: 100%;">-->
+        <!--</ion-item>-->
+    <!--</ion-list>-->
+    <!--<ion-infinite-scroll-->
+            <!--on-infinite="loadMore()"-->
+            <!--ng-if="moreDataCanBeLoaded"-->
+            <!--distance="5%">-->
+    <!--</ion-infinite-scroll>-->
+<!--</ion-content>-->

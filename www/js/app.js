@@ -60,6 +60,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'GalleryCtrl'
       }
     }
+  })
+
+  .state('tab.gallery2', {
+    url: '/gallery2',
+    views: {
+      'tab-gallery2': {
+        templateUrl: 'templates/tab-gallery2.html',
+        controller: 'Gallery2Ctrl'
+      }
+    }
+  })
+
+  .state('tab.gallery3', {
+    url: '/gallery3',
+    views: {
+      'tab-gallery3': {
+        templateUrl: 'templates/tab-gallery3.html',
+        controller: 'Gallery3Ctrl'
+      }
+    }
+  })
+
+  .state('tab.gallery4', {
+    url: '/gallery4',
+    views: {
+      'tab-gallery4': {
+        templateUrl: 'templates/tab-gallery4.html',
+        controller: 'Gallery4Ctrl'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

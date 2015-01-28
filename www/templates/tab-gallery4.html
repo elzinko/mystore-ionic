@@ -1,0 +1,20 @@
+<ion-view view-title="Gallery4">
+    <ion-content class="padding">
+        <!--<ion-refresher-->
+                <!--pulling-text="Pull to refresh..."-->
+                <!--refreshing-text="loading..."-->
+                <!--on-refresh="doRefresh()">-->
+        <!--</ion-refresher>-->
+        <ion-list>
+            <ion-item ng-repeat="image in images4" item="item"
+                      href="{{image}}">
+                <img ng-src="{{image}}" style="width: 100%;">
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll
+                on-infinite="loadMore4()"
+                ng-if="moreDataCanBeLoaded4"
+                distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

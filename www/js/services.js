@@ -19,26 +19,28 @@ angular.module('starter.services', [])
 }])
 
 .factory('Placehold', function () {
+
   var Placehold = function () {
-    this.busy = false;
+    //this.busy = false;
     this.images = [];
   };
 
-  Placehold.prototype.nextPage = function () {
+  Placehold.prototype.nextPage = function ($scope) {
     if (this.busy) return;
-    this.busy = true;
+    //this.busy = true;
 
     var last = this.images[this.images.length - 1];
-    for (var i = 1; i <= 2; i++) {
+    for (var i = 1; i <= 10; i++) {
       var height = ~~(Math.random() * 500) + 100;
       var id = ~~(Math.random() * 10000);
       this.images.push('http://lorempixel.com/g/280/' + height + '/?' + id);
     }
-    this.busy = false;
+    //this.busy = false;
+    $scope.$broadcast('scroll.inifiniteScrollComplete');
   };
 
   return Placehold;
-});;
+});
 
 //.factory('Chats', function() {
 //  // Might use a resource here that returns a JSON array

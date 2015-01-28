@@ -8,7 +8,6 @@ $ ionic build android
 
 $ ionic add angular-masonry
 
-
 $ ionic serve
 $ ripple emulate
 $ ionic emulate android
